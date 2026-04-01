@@ -30,7 +30,7 @@ input_df = user_input_features()
 input_df['OverTime']= label_encoder['OverTime'].transform(input_df['OverTime'])
 #Make predictions
 if st.button("Predit Attrition"):
-    prediction = model.predit(input_df)
+    prediction = model.predict(input_df)
     prediction_proba = model.predict_proba(input_df)
     st.subheader("Predicition")
     if prediction == 1:
