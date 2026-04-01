@@ -15,7 +15,7 @@ def user_input_features():
     inputs={}
     inputs['Age']=st.sidebar.number_input("Age" ,min_value=18, max_value=65, value=30)
     inputs['MontlyIncome']=st.sidebar.number_input("Montly Income", min_value=1000, max_value=20000,value=5000)
-    inputs['Jobsatisfaction']= st.sidebar.selectbox("Job Satisfaction"[1, 2, 3, 4])
+    inputs['Jobsatisfaction']= st.sidebar.selectbox("Job Satisfaction",[1, 2, 3, 4])
     inputs['OverTime']=st.sidebar.selectbox("Over Time",["Yes", "No"])
     inputs['DistanceFromHome']=st.sidebar.number_input("Distance From Home ",min_value=0, max_value=50, value=10)
     data = {}
