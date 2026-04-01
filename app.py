@@ -3,9 +3,9 @@ import joblib
 import pandas as pd
 import numpy as np
 
-model = joblib.load("C:\\Users\\DELL\\OneDrive\\Desktop\\Full Stack\\project1\\employee_attraction_model.pkl")
-label_encoder = joblib.load("C:\\Users\\DELL\\OneDrive\\Desktop\\Full Stack\\project1\\label_encoder.pkllabel_encoder.pkl")
-feature_columns = joblib.load("C:\\Users\\DELL\\OneDrive\\Desktop\\Full Stack\\project1\\feature_columns.pklfeature_columns.pkl")
+model = joblib.load("assets/employee_attraction_model.pkl")
+label_encoder = joblib.load("assets/label_encoder.pkl")
+feature_columns = joblib.load("assets/feature_columns.pkl")
 # set up the Streamlit app
 st.title("Employee Attrition Prediction")
 st.markdown("Enter the employee details to predict whether they are "
